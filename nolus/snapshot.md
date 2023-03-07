@@ -13,7 +13,7 @@ rm -rf $HOME/.nolus/data
 #### Download latest snapshot
 
 ```
-curl -L https://snapshots.megastake.org/nolus-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nolus
+curl -L https://snapshots.megastake.org/nolus/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nolus
 mv $HOME/.nolus/priv_validator_state.json.backup $HOME/.nolus/data/priv_validator_state.json
 ```
 ### Restart the service and check the log
